@@ -1,15 +1,16 @@
 'use strict';
 
-// es6 feature: block-test public es6 "let" declaration
-var sentences = [{ subject: 'JavaScript', verb: 'is', object: 'great' }, { subject: 'Elephants', verb: 'are', object: 'large' }];
+// es6 feature: block-scoped "let" declaration
+var sentences = [{ subject: 'JavaScript', verb: 'is', object: 'great' }, { subject: 'U', verb: 'is', object: 'Hurricanes' }];
 // es6 feature: object destructuring
 function say(_ref) {
     var subject = _ref.subject,
         verb = _ref.verb,
         object = _ref.object;
-}
-// es6 feature: template strings console.log(`${subject} ${verb} ${object}`);
 
+    // es6 feature: template strings
+    console.log(subject + ' ' + verb + ' ' + object);
+}
 // es6 feature: for..of
 var _iteratorNormalCompletion = true;
 var _didIteratorError = false;
